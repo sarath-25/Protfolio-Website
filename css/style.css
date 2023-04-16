@@ -1,0 +1,182 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+
+body {
+    color: darkslategray;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 80px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+h1,h2{
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+a{
+    background: #7bdff2;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+a:hover{
+    background: rgb(123,223,242,65%);
+    margin: -2px;
+
+}
+
+h3{
+    margin-bottom: 0;
+}
+
+.item-details h3 + p{
+    font-style: italic;
+}
+
+.item-details h3 ~ p{
+    margin: 0;
+}
+
+
+/* Profile info
+-----------------*/
+header{
+    background: #1b3022;
+    color: white;
+}
+.content-wrap{
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Projects
+---------------*/
+.projects{
+    background: #f3ffbd;
+    margin: 0;
+}
+
+.project-item img{
+    width: 400px;
+    height: 290px;
+    
+}
+
+.project-item{
+    overflow: hidden;
+    border-bottom: 1px dashed #1b3022;
+    padding: 25px 0;
+}
+
+.project-item h3{
+    margin-top: 0;
+}
+
+.content-wrap section:last-child{
+    border-bottom: none;
+}
+
+
+/* Work Experience
+------------------------*/
+.experience{
+    background: #e9d6ec;
+}
+
+
+
+
+
+/* Education
+----------------------*/
+.education{
+    background-image: url("../images/tamanna-rumee-8yd0NDi1SHY-unsplash.jpg");
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+
+.education p{
+    width: 65%;
+}
+
+/*Contact Info
+---------------*/
+footer{
+    background: #392f5a;
+    color: white;
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.list a{
+    background-color: transparent;
+    color: #f3ffbd;
+    text-decoration: underline;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    flex: 0 0 100%;
+}
+
+.list a:hover{
+    text-decoration: none;
+}
+
+@media screen and (min-width:770px){
+
+    header, footer{
+        text-align: center;
+    }
+
+    .project-item img{
+        float: left;
+        margin-right: 30px;
+    }
+
+    .job-item{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+
+    .list{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:769px){
+    h1{
+        font-size: 75px;
+        margin-bottom: 20px;
+    }
+    h1, h2{
+        line-height: 1;
+    }
+}
